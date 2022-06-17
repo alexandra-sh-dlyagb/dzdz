@@ -24,6 +24,7 @@ value_answer = round(pi, length_pi) #округлила
 print (value_answer)
 
 
+
 # 3. Составить список простых множителей натурального числа N
 N = int (input("Введите число N => "))
 answer_array = []
@@ -35,3 +36,20 @@ while N!=1:
     else:
         delitel = delitel+1
 print (answer_array)
+
+
+
+# 4. Дана последовательность чисел. Получить список неповторяющихся элементов исходной последовательности
+#нашла козырный вариант. реально ооочень удобно
+input_array = [2, 1, 24, 2, 56, 2, 24]
+new_array = set(input_array)
+print (new_array)
+
+
+
+# 5. Дан текстовый файл, содержащий целые числа. Удалить из него все четные числа
+path = 'file.txt'
+data = open(path, 'w')
+for line in data:
+    if int(line)%2==0:
+        data.writelines (line)
