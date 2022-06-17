@@ -22,3 +22,16 @@ length_pi = int(input('Введите количество знаков посл
 pi = math.pi #радостно нашла число пи)))))
 value_answer = round(pi, length_pi) #округлила
 print (value_answer)
+
+
+# 3. Составить список простых множителей натурального числа N
+N = int (input("Введите число N => "))
+answer_array = []
+delitel = 2
+while N!=1:
+    if N%delitel ==0 :
+        answer_array.append(delitel)
+        N = N/delitel
+    else:
+        delitel = delitel+1
+print (answer_array)
